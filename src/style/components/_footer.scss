@@ -1,0 +1,32 @@
+.footer {
+  background: $footer-gray;
+  padding: rem(58 0 27);
+  color: #fff;
+}
+
+.footer__logo {
+  margin-bottom: rem(19);
+}
+
+.footer__logo-descr {
+  font-size: rem(9);
+  max-width: rem(225);
+  letter-spacing: 1.8px;
+}
+
+.footer__contacts {
+  font-size: rem(16);
+  line-height: 1.75;
+}
+
+.footer__sub-block {
+  padding-top: rem(30);
+}
+
+.footer__info {
+  font-size: rem(14);
+  color: $footer-sub-block-color;
+  .blue {
+    color: $blue;
+  }
+}

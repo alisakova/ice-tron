@@ -1,0 +1,40 @@
+.header {
+  padding-top: rem(32);
+  padding: {
+    top: rem(32);
+    bottom: rem(40);
+  }
+  margin-bottom: rem(37);
+  background: #fff;
+  color: $black;
+  &_alt {
+    background: transparent;
+    color: #fff;
+    padding-bottom: 0;
+    margin-bottom: rem(143);
+  }
+}
+
+.header__logo {
+  margin-right: rem(22);
+}
+
+.header__company-descr {
+  font-size: rem(10);
+  line-height: 1.7;
+  letter-spacing: 2px;
+  max-width: rem(300);
+  color: $black;
+  &_gray-color {
+    color: $light-gray;
+  }
+}
+
+.header__contacts {
+  margin-right: rem(122);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: rem(14);
+  line-height: 2;
+}

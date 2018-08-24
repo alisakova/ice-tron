@@ -1,0 +1,13 @@
+.contact {
+  &_margin-right {
+    margin-right: rem(36);
+  }
+  &_margin-bottom {
+    margin-bottom: rem(10);
+  }
+}
+
+.contact__icon {
+  display: inline-block;
+  margin-right: rem(5);
+}

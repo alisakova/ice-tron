@@ -1,0 +1,13 @@
+.button {
+  border: none;
+  padding: rem(15 13);
+  font: {
+    size: rem(14);
+    family: $main-font;
+  }
+  color: #fff;
+  line-height: 1.2;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: $blue;
+}

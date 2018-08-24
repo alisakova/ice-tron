@@ -1,0 +1,14 @@
+.company {
+  margin-bottom: rem(107);
+}
+
+.company__title {
+  margin-bottom: rem(58);
+}
+
+.company__paragraph {
+  font-family: $main-font;
+  &:not(:last-child) {
+    margin-bottom: rem(15);
+  }
+}

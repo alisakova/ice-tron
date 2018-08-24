@@ -1,0 +1,47 @@
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(120);
+  font: {
+    family: $head-font;
+    size: rem(16);
+  }
+}
+
+.numbers__item {
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  max-width: rem(256);
+  padding: rem(26 0 31);
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    left: rem(14);
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.numbers__number {
+  color: $blue;
+  font-size: rem(60);
+  line-height: 1;
+}
+
+.numbers__descr {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: rem(-13);
+    width: rem(40);
+    height: 2px;
+    background: $blue;
+  }
+}
