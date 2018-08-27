@@ -1,6 +1,6 @@
 .contact {
   &_margin-right {
-    margin-right: rem(36);
+    margin-right: rem(80);
   }
   &_margin-bottom {
     margin-bottom: rem(10);
@@ -9,5 +9,8 @@
 
 .contact__icon {
   display: inline-block;
-  margin-right: rem(5);
+  margin: {
+    right: rem(5);
+    top: rem(-5);
+  }
 }

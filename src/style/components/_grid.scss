@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   &_border-bottom {
-    padding-bottom: rem(65);
+    padding-bottom: rem(54);
     border-bottom: 2px solid #616161;
   }
   &_flex-start {
@@ -19,5 +19,15 @@
   }
   &_margin-right {
     margin-right: rem(80);
+  }
+  &_small-margin-right {
+    margin-right: rem(40);
+  }
+  &_with-img {
+    min-width: 50%;
+    max-width: 50%;
+  }
+  &_width-50 {
+    width: 50%;
   }
 }

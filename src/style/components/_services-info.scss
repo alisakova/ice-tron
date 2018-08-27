@@ -1,0 +1,37 @@
+.services-info {
+  margin-bottom: rem(58);
+  padding-top: rem(26);
+}
+
+.services-info__main-title {
+  margin-bottom: rem(50);
+}
+
+.services-info__title {
+  margin-bottom: rem(28);
+  font: {
+    size: rem(24);
+    weight: 400;
+    family: $head-font;
+  }
+  text-transform: uppercase;
+}
+
+.services-info__descr {
+  &_margin-bottom {
+    margin-bottom: rem(70);
+  }
+}
+
+.services-info__paragraph {
+  font-family: $main-font;
+  &:not(:last-child) {
+    margin-bottom: rem(13);
+  }
+}
+
+.services-info__img {
+  margin-top: rem(-20);
+  display: flex;
+  justify-content: center;
+}

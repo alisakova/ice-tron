@@ -1,0 +1,32 @@
+.service-address {
+  position: absolute;
+  background: #fff;
+  padding: rem(32 30 38);
+  top: 0;
+  left: rem(-30);
+  width: rem(448);
+  z-index: 5;
+}
+
+.service-address__title {
+  margin-bottom: rem(25);
+  h2 {
+    font-size: rem(24);
+  }
+}
+
+.service-address__text {
+  font-size: rem(14);
+  &_bold {
+    font: {
+      family: $head-font;
+    }
+  }
+}
+
+.service-address__row {
+  &:not(:last-child) {
+    margin-bottom: rem(22);
+  }
+
+}

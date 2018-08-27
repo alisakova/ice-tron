@@ -1,14 +1,18 @@
 .company {
-  margin-bottom: rem(107);
+  margin-bottom: rem(95);
+  padding-top: rem(32);
 }
 
 .company__title {
-  margin-bottom: rem(58);
+  margin-bottom: rem(50);
+  h2 {
+    white-space: nowrap;
+  }
 }
 
 .company__paragraph {
   font-family: $main-font;
   &:not(:last-child) {
-    margin-bottom: rem(15);
+    margin-bottom: rem(9);
   }
 }

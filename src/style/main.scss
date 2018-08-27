@@ -29,6 +29,7 @@
 }
 
 @import "variables";
+@import "mixin";
 @import "util";
 
 html {
@@ -164,3 +165,16 @@ img {
 @import "components/title";
 @import "components/company";
 @import "components/numbers";
+@import "components/note";
+@import "components/history";
+@import "components/join-block";
+@import "components/services-info";
+@import "components/form";
+@import "components/features";
+@import "components/info-list";
+@import "components/contacts-info";
+@import "components/contacts-list";
+@import "components/service";
+@import "components/service-address";
+@import "components/service-list";
+@import "components/partnership-info";

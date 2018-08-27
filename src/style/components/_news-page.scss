@@ -1,13 +1,13 @@
 .news-page {
-  padding-bottom: rem(150);
+  padding-bottom: rem(140);
 }
 
 .news-page__title {
-  margin-bottom: rem(60);
+  margin-bottom: rem(58);
 }
 
 .news-page__img {
-  margin-bottom: rem(72);
+  margin-bottom: rem(64);
   position: relative;
   &:after {
     content: '';
@@ -38,6 +38,6 @@
     family: $main-font;
   }
   &:not(:last-child) {
-    margin-bottom: rem(15);
+    margin-bottom: rem(12);
   }
 }

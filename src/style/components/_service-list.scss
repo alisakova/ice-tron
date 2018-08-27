@@ -1,0 +1,29 @@
+.service-list {
+  margin-bottom: rem(60);
+}
+
+.service-list__title {
+  color: #5783e5;
+  font: {
+    family: $head-font;
+    size: rem(24);
+    weight: 900;
+  }
+  line-height: 1.2;
+  margin-bottom: rem(10);
+}
+
+.service-list__section {
+  margin-bottom: rem(22);
+}
+
+.service-list__city-name {
+  font: {
+    size: rem(16);
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+  position: relative;
+  text-decoration: underline;
+}

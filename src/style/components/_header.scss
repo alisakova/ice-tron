@@ -1,10 +1,9 @@
 .header {
-  padding-top: rem(32);
   padding: {
-    top: rem(32);
-    bottom: rem(40);
+    top: rem(37);
+    bottom: rem(34);
   }
-  margin-bottom: rem(37);
+  margin-bottom: rem(40);
   background: #fff;
   color: $black;
   &_alt {
@@ -16,7 +15,8 @@
 }
 
 .header__logo {
-  margin-right: rem(22);
+  margin-right: rem(18);
+  max-width: rem(195);
 }
 
 .header__company-descr {
@@ -31,7 +31,7 @@
 }
 
 .header__contacts {
-  margin-right: rem(122);
+  margin-right: rem(72);
   display: flex;
   justify-content: flex-start;
   align-items: center;

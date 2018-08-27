@@ -1,0 +1,27 @@
+.partnership-info {
+  margin-bottom: rem(110);
+  padding-top: rem(26);
+}
+
+.partnership-info__main-title {
+  margin-bottom: rem(48);
+}
+
+.partnership-info__descr {
+  &_margin-bottom {
+    margin-bottom: rem(50);
+  }
+}
+
+.partnership-info__img {
+  max-width: rem(560);
+}
+
+.partnership-info__title {
+  font: {
+    family: $head-font;
+    size: rem(20);
+  }
+  margin-bottom: rem(16);
+  line-height: 1.65;
+}

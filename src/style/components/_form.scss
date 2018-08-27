@@ -1,0 +1,23 @@
+.form {
+
+}
+
+.form__item {
+  &:not(:last-child) {
+    margin-right: rem(16);
+  }
+}
+
+.form__input {
+  padding: rem(13 7 13 16);
+  height: rem(40);
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  font: {
+    size: rem(14);
+  }
+  @include input-placeholder {
+    color: $black;
+  }
+}
