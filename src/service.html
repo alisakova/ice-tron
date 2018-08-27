@@ -5,11 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-  <title>Сервис</title>
-	<script
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"></script>
+	<title>Сервис</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -21,10 +18,32 @@
 			@import "service/service-info.html"
 			@import "service/service-list.html"
 		</div>
-
+		@import "service/map.html"
 	</main>
 	@import "footer.html"
-	<!-- <script src="js/main.min.js"></script> -->
+	<script src="js/main.min.js"></script>
+	<!-- <script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			var uluru = {
+				lat: 54.704097,
+				lng: 20.232629
+			};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+				document.getElementById('map'), {
+					zoom: 9,
+					center: uluru
+				});
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtNNfbNOOjr7-i9ES4-_8HKi8N6VkDaHg&callback=initMap">
+	</script> -->
 </body>
-
 </html>

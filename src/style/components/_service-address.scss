@@ -6,6 +6,11 @@
   left: rem(-30);
   width: rem(448);
   z-index: 5;
+  cursor: auto;
+  display: none;
+  &.active {
+    display: block;
+  }
 }
 
 .service-address__title {

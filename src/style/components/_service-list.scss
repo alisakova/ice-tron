@@ -2,6 +2,18 @@
   margin-bottom: rem(60);
 }
 
+.service-list__container {
+  max-height: rem(1260);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.service-list__list {
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .service-list__title {
   color: #5783e5;
   font: {
@@ -18,12 +30,15 @@
 }
 
 .service-list__city-name {
-  font: {
-    size: rem(16);
-  }
+  font-size: rem(16);
+  cursor: pointer;
   &:not(:last-child) {
     margin-bottom: rem(10);
   }
   position: relative;
   text-decoration: underline;
+  transition: text-decoration 250ms;
+  &:hover {
+    text-decoration: none;
+  }
 }

@@ -36,23 +36,24 @@
   padding: rem(38 20 50);
   margin: 0 rem(36);
   position: relative;
-  &:after {
+  &:after, &:before {
     content: '';
     height: 2px;
-    width: rem(510);
+    width: 45%;
     background: $blue;
     position: absolute;
     top: 0;
+  }
+  &:after {
     left: 0;
   }
   &:before {
-    content: '';
-    height: 2px;
-    width: rem(510);
-    background: $blue;
-    position: absolute;
-    top: 0;
     right: 0;
+  }
+  @media (max-width: 540px) {
+    &:after, &:before {
+      width: 40%;
+    }
   }
 }
 

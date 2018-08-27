@@ -1,6 +1,6 @@
 .button {
   border: none;
-  padding: rem(15 13);
+  padding: rem(14 11);
   font: {
     size: rem(14);
     family: $main-font;
@@ -17,5 +17,20 @@
       top: rem(14);
       bottom: rem(14);
     }
+  }
+  &_alt {
+    border: 3px solid $blue;
+    border-radius: 1px;
+    background: transparent;
+    text-transform: lowercase;
+    padding: rem(11 13);
+    transition: background-color 250ms, color 250ms;
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+  &_color-black {
+    color: $black;
   }
 }

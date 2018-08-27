@@ -2,10 +2,13 @@
   background: #fff;
   padding: rem(45 308 42 45);
   position: relative;
-  margin-bottom: rem(96);
   margin: {
     bottom: rem(96);
     right: rem(45);
+  }
+  @media (max-width: 540px) {
+    padding-right: rem(45);
+    margin-right: 0;
   }
 }
 
@@ -21,10 +24,18 @@
 
 .note__text {
   font-family: $main-font;
+  @media (max-width: 540px) {
+    margin-bottom: rem(18);
+  }
 }
 
 .note__img {
   position: absolute;
   right: rem(-49);
   top: rem(-38);
+  max-width: rem(335);
+  @media (max-width: 540px) {
+    position: static;
+    margin: 0 0 0 auto;
+  }
 }

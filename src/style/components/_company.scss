@@ -1,6 +1,6 @@
 .company {
   margin-bottom: rem(95);
-  padding-top: rem(32);
+  padding-top: rem(24);
 }
 
 .company__title {
@@ -14,5 +14,22 @@
   font-family: $main-font;
   &:not(:last-child) {
     margin-bottom: rem(9);
+  }
+}
+
+@media (max-width: 540px) {
+  .company {
+    margin-bottom: rem(48);
+  }
+  .company__descr {
+    flex-direction: column;
+  }
+  .company__paragraph {
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+    &:last-child {
+      margin-bottom: rem(15);
+    }
   }
 }

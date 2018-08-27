@@ -9,14 +9,20 @@
   &_alt {
     background: transparent;
     color: #fff;
-    padding-bottom: 0;
-    margin-bottom: rem(143);
+    padding: {
+      top: rem(32);
+      bottom: 0;
+    }
+    margin-bottom: rem(132);
   }
 }
 
 .header__logo {
   margin-right: rem(18);
   max-width: rem(195);
+  &_big {
+    max-width: rem(232);
+  }
 }
 
 .header__company-descr {

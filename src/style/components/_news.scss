@@ -1,0 +1,14 @@
+.news__main-title {
+  margin-bottom: rem(60);
+}
+
+.news__list {
+  margin: {
+    bottom: rem(34);
+    right: rem(-37);
+  }
+  display: flex;
+  // justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}

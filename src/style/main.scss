@@ -88,9 +88,12 @@ h1 {
     family: $head-font;
     weight: 400;
   }
-  line-height: 0.7;
+  line-height: 1.2;
   margin: 0;
   text-transform: uppercase;
+  @media (max-width: 540px) {
+    font-size: rem(26);
+  }
 }
 
 h2 {
@@ -99,9 +102,12 @@ h2 {
     family: $head-font;
     weight: 400;
   }
-  line-height: 0.7;
+  line-height: 1.2;
   margin: 0;
   text-transform: uppercase;
+  @media (max-width: 540px) {
+    font-size: rem(26);
+  }
 }
 
 p {
@@ -154,8 +160,7 @@ img {
 @import "components/first-slide";
 @import "components/menu";
 @import "components/button";
-// @import "components/news";
-@import "components/news-block";
+@import "components/news-section";
 @import "components/footer";
 @import "components/grid";
 @import "components/contact";
@@ -178,3 +183,6 @@ img {
 @import "components/service-address";
 @import "components/service-list";
 @import "components/partnership-info";
+@import "components/map";
+@import "components/news";
+@import "components/news-block";
