@@ -1,0 +1,43 @@
+%icons-slick {
+  display: block;
+  color: $blue;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  font-size: rem(28);
+}
+
+.slick-prev {
+  font-size: 0;
+  right: rem(62);
+  &:before {
+    content: '<';
+    @extend %icons-slick;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: rem(-23);
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #9f9f9f;
+  }
+}
+
+.slick-next {
+  font-size: 0;
+  right: 0;
+  &:before {
+    content: '>';
+    @extend %icons-slick;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: rem(-100);
+  @media (max-width: 540px) {
+    top: rem(-85);
+  }
+}

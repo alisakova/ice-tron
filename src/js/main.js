@@ -1,30 +1,9 @@
-var addressList = document.querySelectorAll(".service-list__city-name");
-var body = document.querySelector("body");
-
-var openServiceAddressInfo = function(elem) {
-  elem.addEventListener("click", function(e) {
-    e.stopPropagation();
-    var addressInfoBlockActive = document.querySelectorAll(
-      ".service-address.active"
-    );
-    addressInfoBlockActive.forEach(function(item) {
-      item.classList.remove("active");
+$(document).ready(function(){
+  if ($('.news-slider').length) {
+    $('.news-slider').slick({
+      infinite: true,
+      arrows: true,
+      autoplay: true,
     });
-    var addressInfoBlock = elem.querySelector(".service-address");
-    if (addressInfoBlock) {
-      addressInfoBlock.classList.add("active");
-    }
-  });
-};
-
-addressList.forEach(openServiceAddressInfo);
-
-body.addEventListener("click", function(e) {
-  e.stopPropagation();
-  var addressInfoBlockActive = document.querySelectorAll(
-    ".service-address.active"
-  );
-  addressInfoBlockActive.forEach(function(item) {
-    item.classList.remove("active");
-  });
+  }
 });

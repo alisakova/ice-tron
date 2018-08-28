@@ -2,3 +2,10 @@
   background: $news-gray;
   padding: rem(106 0 95);
 }
+
+.news-section__title {
+  margin-bottom: rem(60);
+  @media (max-width: 540px) {
+    margin-bottom: rem(48);
+  }
+}

@@ -15,16 +15,19 @@
 </head>
 
 <body>
-	@import "header.html"
-	<main>
-		<div class="container">
-			@import "contacts/contacts-info.html"
-			@import "contacts/contacts-list.html"
-		</div>
-
-	</main>
-	@import "footer.html"
-	<!-- <script src="js/main.min.js"></script> -->
+	<div class="wrapper">
+		@import "menu.html"
+		@import "header.html"
+		<main>
+			<div class="container">
+				@import "contacts/contacts-info.html"
+				@import "contacts/contacts-list.html"
+			</div>
+			@import "contacts/map.html"
+		</main>
+		@import "footer.html"
+	</div>
+	<script src="js/main.min.js"></script>
 </body>
 
 </html>

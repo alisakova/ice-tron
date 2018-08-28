@@ -20,6 +20,23 @@
 .services-info__descr {
   &_margin-bottom {
     margin-bottom: rem(70);
+    @media (max-width: 540px) {
+      margin-bottom: rem(25);
+    }
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+    .grid__col {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      &:first-child {
+        margin-bottom: rem(25);
+      }
+      &_with-img {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -32,6 +49,4 @@
 
 .services-info__img {
   margin-top: rem(-20);
-  display: flex;
-  justify-content: center;
 }

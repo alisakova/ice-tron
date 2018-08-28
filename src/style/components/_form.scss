@@ -5,6 +5,18 @@
 .form__item {
   &:not(:last-child) {
     margin-right: rem(16);
+    @media (max-width: 600px) {
+      margin: {
+        right: 0;
+        bottom: rem(25);
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    .button {
+      width: 100%;
+    }
   }
 }
 
@@ -19,5 +31,8 @@
   }
   @include input-placeholder {
     color: $black;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
   }
 }

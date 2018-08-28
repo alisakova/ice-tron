@@ -1,6 +1,9 @@
 .partnership-info {
   margin-bottom: rem(110);
   padding-top: rem(26);
+  @media (max-width: 540px) {
+    margin-bottom: rem(48);
+  }
 }
 
 .partnership-info__main-title {
@@ -10,6 +13,21 @@
 .partnership-info__descr {
   &_margin-bottom {
     margin-bottom: rem(50);
+    @media (max-width: 540px) {
+      margin-bottom: rem(25);
+    }
+  }
+  @media (max-width: 540px) {
+    flex-direction: column;
+    .grid__col {
+      width: 100%;
+      &_small-margin-right {
+        margin: {
+          right: 0;
+          bottom: rem(25);
+        }
+      }
+    }
   }
 }
 

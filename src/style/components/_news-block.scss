@@ -12,6 +12,23 @@
     max-width: rem(770);
     color: #fff;
   }
+  &_margin-bottom-0 {
+    margin-bottom: 0;
+    @media (max-width: 600px) {
+      &:first-child {
+        margin-bottom: rem(25);
+        margin-right: 0;
+      }
+    }
+  }
+  &_margin-right-0 {
+    margin-right: 0;
+  }
+  &_width-100 {
+    @media (max-width: 600px) {
+      max-width: none;
+    }
+  }
 }
 
 .news-block__date {
@@ -56,6 +73,11 @@
   }
   &_bg {
     max-height: none;
+  }
+  &_max-height-none {
+    @media (max-width: 600px) {
+      max-height: none;
+    }
   }
 }
 

@@ -1,5 +1,8 @@
 .news-page {
   padding-bottom: rem(140);
+  @media (max-width: 540px) {
+    padding-bottom: rem(48);
+  }
 }
 
 .news-page__title {
@@ -17,6 +20,9 @@
     top: 0;
     left: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+  }
+  @media (max-width: 540px) {
+    margin-bottom: rem(25);
   }
 }
 

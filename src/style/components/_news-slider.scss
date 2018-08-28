@@ -1,0 +1,13 @@
+.news-slider {
+  .slick-slide {
+    display: flex;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  .news-block_big {
+    @media (max-width: 600px) {
+      height: rem(400);
+    }
+  }
+}

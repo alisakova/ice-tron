@@ -15,16 +15,20 @@
 </head>
 
 <body>
-	@import "header.html"
-	<main>
-		<div class="container">
-			@import "partnership/partnership-info.html"
-			@import "partnership/features.html"
-		</div>
-		@import "partnership/join-block.html"
-	</main>
-	@import "footer.html"
-	<!-- <script src="js/main.min.js"></script> -->
+	<div class="wrapper">
+		@import "menu.html"
+		@import "header.html"
+		<main>
+			<div class="container">
+				@import "partnership/partnership-info.html"
+				@import "partnership/features.html"
+			</div>
+			@import "partnership/join-block.html"
+		</main>
+		@import "footer.html"
+	</div>
+
+	<script src="js/main.min.js"></script>
 </body>
 
 </html>

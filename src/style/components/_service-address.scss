@@ -11,6 +11,10 @@
   &.active {
     display: block;
   }
+  @media (max-width: 375px) {
+    width: 100vw;
+    left: -15px;
+  }
 }
 
 .service-address__title {

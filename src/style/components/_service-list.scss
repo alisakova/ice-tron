@@ -23,6 +23,9 @@
   }
   line-height: 1.2;
   margin-bottom: rem(10);
+  @media (max-width: 540px) {
+    font-size: 14px;
+  }
 }
 
 .service-list__section {
@@ -40,5 +43,8 @@
   transition: text-decoration 250ms;
   &:hover {
     text-decoration: none;
+  }
+  @media (max-width: 540px) {
+    font-size: 10px;
   }
 }

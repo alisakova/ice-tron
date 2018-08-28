@@ -1,7 +1,22 @@
+.service {
+  margin-bottom: rem(60);
+  @media (max-width: 540px) {
+    margin-bottom: rem(48);
+  }
+}
+
 .service__main-title {
   margin-bottom: rem(40);
 }
 
 .service__info {
-  margin-bottom: rem(60);
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    .grid__col {
+      width: 100%;
+      &:last-child {
+        margin-bottom: rem(25);
+      }
+    }
+  }
 }

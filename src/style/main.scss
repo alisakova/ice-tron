@@ -76,6 +76,11 @@ ul {
   list-style-type: none;
 }
 
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .container {
   max-width: rem(1210);
   padding: 0 rem(20);
@@ -92,7 +97,7 @@ h1 {
   margin: 0;
   text-transform: uppercase;
   @media (max-width: 540px) {
-    font-size: rem(26);
+    font-size: rem(22);
   }
 }
 
@@ -106,7 +111,7 @@ h2 {
   margin: 0;
   text-transform: uppercase;
   @media (max-width: 540px) {
-    font-size: rem(26);
+    font-size: rem(22);
   }
 }
 
@@ -186,3 +191,6 @@ img {
 @import "components/map";
 @import "components/news";
 @import "components/news-block";
+@import "components/news-slider";
+@import "components/slick";
+@import "components/burger";

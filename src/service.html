@@ -12,15 +12,17 @@
 </head>
 
 <body>
-	@import "header.html"
-	<main>
-		<div class="container">
-			@import "service/service-info.html"
-			@import "service/service-list.html"
-		</div>
-		@import "service/map.html"
-	</main>
-	@import "footer.html"
+	<div class="wrapper">
+		@import "menu.html"
+		@import "header.html"
+		<main>
+			<div class="container">
+				@import "service/service-info.html"
+				@import "service/service-list.html"
+			</div>
+		</main>
+		@import "footer.html"
+	</div>
 	<script src="js/main.min.js"></script>
 	<!-- <script>
 		// Initialize and add the map
@@ -39,11 +41,12 @@
 			// The marker, positioned at Uluru
 			var marker = new google.maps.Marker({
 				position: uluru,
-				map: map
+				map: map,
+				icon: 'img/marker.png'
 			});
 		}
 	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtNNfbNOOjr7-i9ES4-_8HKi8N6VkDaHg&callback=initMap">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDftl5IMAvtj_b9zvyMBEG2E5pspNv5smU&callback=initMap">
 	</script> -->
 </body>
 </html>

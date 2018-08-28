@@ -4,6 +4,9 @@
 
 .history__title {
   margin-bottom: rem(69);
+  @media (max-width: 540px) {
+    margin-bottom: rem(48);
+  }
 }
 
 .history__item {

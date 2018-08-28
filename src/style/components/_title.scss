@@ -5,6 +5,16 @@
   h1, h2 {
     white-space: nowrap;
   }
+  &.info-block__title_long {
+    h2 {
+      white-space: normal;
+    }
+    @media (min-width: 540px) {
+      .title__line {
+        display: none;
+      }
+    }
+  }
 }
 
 .title__line {

@@ -8,7 +8,10 @@
   }
   @media (max-width: 540px) {
     padding-right: rem(45);
-    margin-right: 0;
+    margin: {
+      right: 0;
+      bottom: rem(48);
+    }
   }
 }
 
