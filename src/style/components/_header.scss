@@ -10,14 +10,15 @@
   width: 100%;
   top: 0;
   &_alt {
-    background: transparent;
+    background-color: transparent;
     color: #fff;
     padding: {
       top: rem(27);
       bottom: rem(27);
     }
+    transition: background-color 250ms;
     &.active {
-      background: #fff;
+      background-color: #fff;
       color: $black;
       .header__company-descr_gray-color {
         color: $black;
