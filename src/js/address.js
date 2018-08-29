@@ -22,11 +22,23 @@ $(document).ready(function() {
     addressList.forEach(openServiceAddressInfo);
 
     body.addEventListener("click", function(e) {
-      // e.stopPropagation();
+      e.stopPropagation();
       var addressInfoBlockActive = document.querySelector(
         ".service-address.active"
       );
-      addressInfoBlockActive.classList.remove("active");
+      console.log(1);
+      if (addressInfoBlockActive) {
+        addressInfoBlockActive.classList.remove("active");
+      }
+    });
+    body.addEventListener("touchstart", function(e) {
+      e.stopPropagation();
+      var addressInfoBlockActive = document.querySelector(
+        ".service-address.active"
+      );
+      if (addressInfoBlockActive) {
+        addressInfoBlockActive.classList.remove("active");
+      }
     });
   }
 });
