@@ -12,11 +12,11 @@
   overflow-x: hidden;
   &.active {
     right: 0;
-    @media (max-width: 540px) {
+    @media (max-width: 640px) {
       width: 100%;
     }
   }
-  @media (max-width: 540px) {
+  @media (max-width: 640px) {
     padding: {
       left: rem(20);
       right: rem(20);
