@@ -2,6 +2,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  @media (max-width: 811px) {
+    justify-content: space-between;
+    margin-right: rem(40);
+    &.features__list {
+      margin-right: rem(110);
+    }
+  }
   @media (max-width: 540px) {
     flex-direction: column;
     justify-content: center;
@@ -11,63 +18,39 @@
 
 .info-list__item {
   position: relative;
-  padding: {
-    left: rem(34);
-    top: rem(40);
-  }
-  &:nth-child(2):not(.info-list__item_big-margin-right) {
-    margin-right: rem(70);
-    @media (max-width: 540px) {
+  border-radius: 50%;
+  background: #fff;
+  max-width: rem(143);
+  min-width: rem(143);
+  height: rem(143);
+  &:not(:last-child) {
+    margin-right: rem(255);
+    @media (max-width: 811px) {
       margin-right: 0;
     }
-    .info-list__descr {
-      max-width: rem(200);
-      @media (max-width: 540px) {
-        max-width: rem(225);
-      }
-    }
-  }
-  &:first-child:not(.info-list__item_small-margin-right) {
-    margin-right: rem(100);
     @media (max-width: 540px) {
-      margin-right: 0;
-    }
-    .info-list__descr {
-      max-width: rem(160);
-      @media (max-width: 540px) {
-        max-width: rem(225);
-      }
+      margin-bottom: rem(48);
     }
   }
-  &_small-margin-right {
-    margin-right: rem(37);
+}
+
+.info-list__content {
+  position: absolute;
+  top: rem(33);
+  left: rem(35);
+  &_min-width {
+    min-width: rem(330);
+    @media (max-width: 811px) {
+      min-width: rem(250);
+    }
+  }
+  &_medium-min-width {
+    min-width: rem(225);
+  }
+  &_small-min-width {
+    min-width: rem(182);
     @media (max-width: 540px) {
-      margin-right: 0;
-    }
-  }
-  &_big-margin-right {
-    margin-right: rem(232);
-    @media (max-width: 768px) {
-      margin-right: rem(135);
-    }
-    @media (max-width: 540px) {
-      margin-right: 0;
-    }
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background: #fff;
-    left: 0;
-    top: 0;
-    width: rem(143);
-    height: rem(143);
-    z-index: -1;
-  }
-  @media (max-width: 540px) {
-    &:not(:last-child) {
-      margin-bottom: rem(25);
+      min-width: rem(225);
     }
   }
 }
@@ -85,17 +68,6 @@
 
 .info-list__descr {
   font-family: $main-font;
-  max-width: rem(225);
-  &_bix-max-width {
-    max-width: rem(330);
-    @media (max-width: 768px) {
-      max-width: rem(220);
-    }
-    @media (max-width: 540px) {
-      max-width: rem(350);
-      text-align: center;
-    }
-  }
 }
 
 .info-list__contact {
