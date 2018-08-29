@@ -1,7 +1,8 @@
 .contact {
+
   &_margin-right {
     margin-right: rem(80);
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
       margin-right: rem(25);
     }
   }

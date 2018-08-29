@@ -4,18 +4,20 @@
   color: #fff;
   padding-bottom: rem(258);
   margin-bottom: rem(102);
+  padding-top: rem(216);
+  position: relative;
+  @media (max-width: 600px) {
+    padding-top: rem(140);
+  }
   @media (max-width: 540px) {
     margin-bottom: rem(48);
+    padding-top: rem(120);
+  }
+  @media (max-width: 475px) {
+    padding-top: rem(100);
   }
   @media (min-width: 1080px) {
     min-height: 100vh;
-  }
-  .container {
-    @media (min-width: 1080px) {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
   }
 }
 

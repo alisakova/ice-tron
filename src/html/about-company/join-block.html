@@ -7,9 +7,19 @@
       <h2 class="join-block__title">
         Присоединяйтесь к партнерской сети «Айстрон»!
       </h2>
-      <button class="button button_font-size-12">
-        Отправить заявку
-      </button>
+      <form class="join-block__form form">
+        <div class="form__item">
+          <input type="text" class="form__input" placeholder="Ваше имя" required />
+        </div>
+        <div class="form__item">
+          <input type="tel" class="form__input" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+        </div>
+        <div class="form__item">
+          <button type="submit" class="button button_font-size-12">
+            Отправить заявку
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>

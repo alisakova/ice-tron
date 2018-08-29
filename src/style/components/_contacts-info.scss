@@ -1,3 +1,16 @@
+.contacts-info {
+  padding-top: rem(171);
+  @media (max-width: 600px) {
+    padding-top: rem(140);
+  }
+  @media (max-width: 540px) {
+    padding-top: rem(120);
+  }
+  @media (max-width: 475px) {
+    padding-top: rem(100);
+  }
+}
+
 .contacts-info__main-title {
   margin-bottom: rem(53);
 }

@@ -1,6 +1,15 @@
 .services-info {
   margin-bottom: rem(58);
-  padding-top: rem(26);
+  padding-top: rem(171);
+  @media (max-width: 600px) {
+    padding-top: rem(140);
+  }
+  @media (max-width: 540px) {
+    padding-top: rem(120);
+  }
+  @media (max-width: 475px) {
+    padding-top: rem(100);
+  }
 }
 
 .services-info__main-title {

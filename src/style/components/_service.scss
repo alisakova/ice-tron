@@ -1,6 +1,14 @@
 .service {
   margin-bottom: rem(60);
+  padding-top: rem(171);
+  @media (max-width: 600px) {
+    padding-top: rem(140);
+  }
+  @media (max-width: 475px) {
+    padding-top: rem(100);
+  }
   @media (max-width: 540px) {
+    padding-top: rem(120);
     margin-bottom: rem(48);
   }
 }
