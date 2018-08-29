@@ -22,7 +22,7 @@ $(document).ready(function() {
     addressList.forEach(openServiceAddressInfo);
 
     body.addEventListener("click", function(e) {
-      e.stopPropagation();
+      // e.stopPropagation();
       var addressInfoBlockActive = document.querySelector(
         ".service-address.active"
       );
