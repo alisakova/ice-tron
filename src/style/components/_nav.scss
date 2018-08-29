@@ -13,7 +13,11 @@
 .nav__link {
   display: block;
   text-transform: uppercase;
+  transition: color 250ms;
   &:not(:last-child) {
     margin-bottom: rem(10);
+  }
+  &:hover {
+    color: darken(#fff, 30%);
   }
 }

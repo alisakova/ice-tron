@@ -33,6 +33,12 @@
   }
 }
 
+.footer__link {
+  &:hover {
+    color: lighten($footer-sub-block-color, 30%);
+  }
+}
+
 @media (max-width: 700px) {
   .footer__grid {
     flex-direction: column;
