@@ -51,6 +51,7 @@
   max-width: rem(370);
   color: $black;
   &_gray-color {
+    transition: color 250ms;
     color: $light-gray;
   }
   @media (max-width: 750px) {
