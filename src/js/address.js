@@ -1,7 +1,7 @@
 var addressList = document.querySelectorAll(".service-list__city-name");
 var body = document.querySelector("body");
 
-$(document).ready(function(){
+$(document).ready(function() {
   if (addressList) {
     var openServiceAddressInfo = function(elem) {
       elem.addEventListener("click", function(e) {
@@ -23,12 +23,10 @@ $(document).ready(function(){
 
     body.addEventListener("click", function(e) {
       e.stopPropagation();
-      var addressInfoBlockActive = document.querySelectorAll(
+      var addressInfoBlockActive = document.querySelector(
         ".service-address.active"
       );
-      addressInfoBlockActive.forEach(function(item) {
-        item.classList.remove("active");
-      });
+      addressInfoBlockActive.classList.remove("active");
     });
   }
 });
