@@ -13,6 +13,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 0;
+    &.features__list {
+      margin-right: 0;
+    }
   }
 }
 
